@@ -49,7 +49,6 @@ const assertArraysEqual = function(array1, array2) {
 const results1 = map(words, word => word[0]);
 const results2 = map(animals, animal => animal[0]);
 const results4 = map(fish, guppy => guppy[0]);
-console.log(results1);
 
 
 
