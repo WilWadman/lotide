@@ -24,7 +24,7 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 // first we need to setup a function that takes in2 arrays as input
-// the first array is our data, the second array is what itmes we want to remove from the first array
+// the first array is our data, the second array is what times we want to remove from the first array
 // we should return a new array with only the elements that weren't removed by the data from the second array
 // splice returns a new array
 const without = function(arr3, itemRemover) {

@@ -26,8 +26,8 @@ const assertObjectsEqual = function(actual, expected) {
 
   } else {
     console.log(`🥊🥊🥊🥊Assertion Failed: ${actual} !== ${expected}`);
-}
-console.log(`Example label: ${inspect(actual)}`);
+  }
+  console.log(`Example label: ${inspect(actual)}`);
 };
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };

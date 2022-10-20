@@ -13,7 +13,7 @@ const eqArrays = function(arr1, arr2) {
     return false;
   }
   for (let i = 0; i < arr1.length; i++) {
-    if (arr1.isArray[i] !== arr2.isArray[i]) {
+    if (arr1[i] !== arr2[i]) {
       return false;
     }
   }
@@ -24,6 +24,11 @@ const eqObjects = function(object1, object2) {
 
   let obj1Keys = Object.keys(object1);
   let obj2Keys = Object.keys(object2);
+
+  if(Array.isArray(object1) && Array.isArray(object2)) {
+    if(!eqArrays(object1, object2)) {
+      return false;
+  }
   if (obj1Keys.length !== obj2Keys.length) {
     return false;
   }
@@ -34,7 +39,7 @@ const eqObjects = function(object1, object2) {
     }
 
   }
-
+  }
   return true;
 };
 
@@ -47,7 +52,7 @@ assertEqual(eqObjects(ab, abc), false); // => false
 
 const abcd = { a: "1", b: "2" };
 const cd = { a: "1", b: "2" };
-assertEqual(eqObjects(abcd, cd), true);
+assertEqual(eqObjects(abcd, cd), true); // = >
 
 const cdf = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
