@@ -1,11 +1,6 @@
 // Function implementation
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🏅🏅🏅🏅 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🥊🥊🥊🥊Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
+
 // we need to create a function that takes in 2 arrays as the input
 // we also need a variable that can switch boolean values based on our conditions
 //we can compare the 2 arrays with array.length, by matching their indexes, and by matching their types
@@ -30,5 +25,6 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-console.log(eqArrays([1,2,3], [1,2,3]));
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+
+
+module.exports = eqArrays;

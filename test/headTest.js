@@ -1,7 +1,5 @@
 const assertEqual = require('../assertEqual');
-const head = function(array){
-  return array[0];
- }
+const head = require('../head')
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 assertEqual(2, 3);
