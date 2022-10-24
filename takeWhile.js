@@ -57,6 +57,6 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 assertArraysEqual(results3,['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'] ); // ==> true
-assertArraysEqual(results4, [100, 90, 80, 70, 60, 50, 40, 30]); // ==> false
+assertArraysEqual(results4, [100, 90, 80, 70, 60, 50, 40, 30]); // ==> true
 assertArraysEqual(results5, ['These', 'Words', 'will' , 'have' , 'lots']); // ==> true
 
